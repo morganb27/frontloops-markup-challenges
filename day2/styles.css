@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f7fe, #f4f2fd);
+    font-family: Roboto, sans-serif;
+}
+
+.root {
+    margin: 150px auto;
+    width: 350px;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-dots {
+    color: #E0E0E0;
+    letter-spacing: 4px;
+    font-size: 35px;
+    margin: -10px;
+}
+
+.first-dot {
+    color: gray;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    border: 1px solid #E0E0E0;
+}
+
+.payment-option.mastercard img:last-child {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.payment-option:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.logo {
+    width: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.visa, .maestro {
+    color: #B0B0B0;
+}
+
+.next-step {
+    display: flex;
+    background-color: #0c61c2;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+}
+
+.next-step:hover {
+    background-color: #2682D4;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 15px;
+    margin-left: 5px;
+}
