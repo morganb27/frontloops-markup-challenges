@@ -1,0 +1,144 @@
+$primary-bg: #4d515d;
+$card-bg: #FFFFFF;
+$border-radius: 3px;
+$button-icon-size: 15px;
+$button-border-color: #f2f3f6;
+$primary-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+body {
+    background-color: $primary-bg;
+    margin: 0;
+    font-family: $primary-font;
+}
+
+.root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 900px;
+        height: 500px;
+        background-color: $card-bg;
+        border-radius: $border-radius;
+        position: relative;
+        display: flex;
+        box-sizing: border-box;
+        
+
+        &::after{
+            content: '';
+            position: absolute;
+            background: url("../img/side.jpg");
+            right: 0;
+            top: 0;
+            width: 35%;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .sign-in-container {
+            width: 65%;
+            padding: 60px 50px;
+            box-sizing: border-box;
+        
+            .card-title {
+                font-size: 32px;
+                font-weight: 350;
+                margin-bottom: 10px;
+            }
+
+            .card-subtitle {
+                color: #b3b1b2;
+                font-size: 12px;
+                margin-bottom: 35px;
+            }
+
+            .card-buttons {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 50px;
+            }
+
+            .card-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $card-bg;
+                border: 1px solid $button-border-color;
+                margin: 10px 10px 10px 0px;
+                padding: 15px;
+                position: relative;
+                transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+
+                img {
+                    width: $button-icon-size;
+                    height: $button-icon-size;
+                    position: absolute;
+                    left: 20px;
+                    
+                }
+
+                span {
+                    text-transform: uppercase;
+                    font-weight: 750;
+                    font-size: 11px;
+                    color: #8c8c8c;
+
+                }
+            }
+
+            .card-button:hover {
+                border-color: #fff;
+                box-shadow: 0 6px 30px 0 rgba(0,0,0, 0.08);
+                color: #333;
+                cursor: pointer;
+                
+                span {
+                    color: black;
+                    transition: color 0.15s ease-in-out;
+                }
+              }
+
+            .horizontal-line {
+                height: 1px;
+                background-color: #f2f3f6;
+                margin: 30px -50px;
+                padding: 0;
+                width: calc(100% + 100px);
+            }
+            
+            .card-additional {
+                font-size: 12px;
+                font-weight: 600;
+                display: flex;
+                justify-content: space-between;
+
+                .card-note {
+                    color: black;
+                }
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+                .card-email {
+                    color: #918e92;
+                    font-weight: 700;
+
+                    &:visited {
+                        color: #918e92;
+                    }
+                }
+                .card-email:hover {
+                    color: black;
+                    transition: color 0.15s ease-in;
+                }
+            }
+        }
+    }
+}
+
